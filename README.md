@@ -1,3 +1,3 @@
-# $\laTeX$ Learning
+# Learning $\laTeX$
 
 A record of learning $\LaTeX$
