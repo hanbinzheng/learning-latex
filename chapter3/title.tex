@@ -1,0 +1,80 @@
+% 首先，选择文档类型。我们用 book 文档类来展示最完整的功能。
+\documentclass{book}
+
+% -------------------------
+% 导言区：设置宏包和文档信息
+% -------------------------
+
+% 设置书名、作者和日期。
+\title{My First \LaTeX{} Book}
+\author{Gemini \thanks{A special thanks to the LaTeX community!}\and Hanbin Zheng}
+\date{\today}
+
+% -------------------------
+% 正文开始
+% -------------------------
+\begin{document}
+
+% -------------------------
+% 前言部分：使用罗马数字页码，章节不编号
+% -------------------------
+\frontmatter
+\include{preface} % 从preface.tex里导入
+\maketitle % 生成标题页
+\tableofcontents % 生成目录
+
+\chapter*{Preface} % 使用星号变体，不编号、不进入目录
+This is the preface to the book. It sets the stage for what is to come. We use an unnumbered chapter here.
+
+% 手动将前言标题添加到目录中
+\addcontentsline{toc}{chapter}{Preface}
+
+% -------------------------
+% 正文部分：页码从1开始，章节正常编号
+% -------------------------
+\mainmatter
+
+\chapter{Introduction to My Book}
+This is the first chapter of the main body of the book. We will introduce all the key concepts here.
+
+\section{First Section}
+This is the first section of the introduction. It provides an overview of the topic.
+Here is some random text to fill the page and demonstrate page numbers.
+\begin{enumerate}
+    \item This is a list item.
+    \item Another list item.
+\end{enumerate}
+
+\subsection{First Subsection with Short Title}
+This is a subsection.
+\subsubsection{A Deeper Dive}
+A further breakdown of the subsection.
+\paragraph{A small paragraph.} This is a small, unnumbered paragraph.
+\subparagraph{Another tiny paragraph.} This is an even smaller paragraph.
+
+\chapter{The Second Chapter}
+This chapter dives deeper into the subject matter.
+
+\section{Section with an Optional Title}
+This is a section where we use a short title for the table of contents.
+\section[Short Title]{This is a very long and descriptive title for my second section}
+Here is some more content for this section.
+
+% -------------------------
+% 附录部分：章节编号改为大写字母
+% -------------------------
+\appendix
+\chapter{Appendix A: Supporting Information}
+This is the appendix, where we provide additional information that is not essential to the main text.
+
+% -------------------------
+% 后记部分：不编号，继续阿拉伯数字页码
+% -------------------------
+\backmatter
+\chapter*{Epilogue}
+This is the epilogue of the book. It concludes the story and offers some final thoughts.
+
+% 手动将后记标题添加到目录中
+\addcontentsline{toc}{chapter}{Epilogue}
+
+\end{document}

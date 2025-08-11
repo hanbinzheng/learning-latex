@@ -1,0 +1,27 @@
+\documentclass{article}
+
+
+
+\begin{document}
+|\mbox{Test some words. Try to test what will happen if the words exceed the limit of a line. Check whether this exceeds one line.}|\\
+|\makebox[10em]{Test some words.}|\\
+|\makebox[10em][l]{Test some words.}|\\
+|\makebox[10em][r]{Test some words.}|\\
+|\makebox[10em][s]{Test some words.}| \\[3ex]
+
+
+|\mbox{Test some words.}| \\
+|\makebox[20em]{Test some words.}| \\
+|\makebox[15em][r]{Test some words.}| \\[4ex]
+
+\framebox[10em][r]{Test box}\\[1ex]
+\setlength{\fboxrule}{1.6pt}
+\setlength{\fboxsep}{1em}
+\framebox[10em][r]{Test box} \\[3ex]
+
+
+Black \rule{12pt}{4pt} box. \\
+Upper \rule[4pt]{6pt}{8pt} and
+lower \rule[-4pt]{6pt}{8pt} box. \\
+A \rule[-.4pt]{3em}{.4pt} line.
+\end{document}

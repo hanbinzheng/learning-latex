@@ -1,0 +1,102 @@
+\documentclass{article}
+
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{multirow}
+
+\begin{document}
+
+\begin{tabular}{|c|}
+center-\\ aligned \\
+\end{tabular},
+\begin{tabular}[t]{|c|}
+top-\\ aligned \\
+\end{tabular},
+\begin{tabular}[b]{|c|}
+bottom-\\ aligned\\
+\end{tabular}
+
+\begin{tabular}{|l|c|r|}
+\hline
+left & center & right \\
+\hline
+aaa & bbb & ccc \\
+ddd & eee & fff \\
+\hline
+\end{tabular}
+
+\begin{tabular}{|c|c|c|c|}
+\hline
+name & hobby & age & sexual preferance \\
+\hline
+zhb & marathon & 19 & switch but m more \\
+\hline
+smyz & sb & 19 & switch but s more \\
+\hline
+xhy & gay & 19 & m \\
+\hline
+\end{tabular}
+
+\par
+
+\begin{tabular}{lcr|p{6em}}
+\hline
+left & center & right
+& par box with fixed width\\
+L & C & R & P \\
+\hline
+\end{tabular}
+
+\par
+
+\begin{tabular}{lcr|p{10em}}
+\hline
+left & center & right
+& par box with fixed width \\
+\hline
+L & C & R & P \\
+\hline
+\end{tabular}
+
+\begin{tabular}{|@{} r@{:\quad} l r@{}|}
+\hline
+Name & Grade & Ranking \\
+\hline
+Hanbin Zheng & 3.9 & 11 \\
+\hline
+Jimmy Xu & 4.0 & 1 \\
+\hline
+\end{tabular}
+
+\begin{tabular}{| >{\itshape}c<{*} | c <{kg} | c <{cm} |}
+\hline
+Hanbin Zheng & 79 & 179 \\
+\hline
+Luoyi Zheng & 32 & 123 \\
+\hline
+\end{tabular}
+
+\begin{tabular}{cccc}
+\toprule
+cloumn 1 & column2 & column 3 & column 4 \\
+\midrule
+data 1 & data 2 & data 3 & data 4 \\
+data a & data b & data c & data d \\
+\bottomrule
+\end{tabular}
+
+\begin{tabular}{ccc}
+\toprule
+\multirow{2}{*}{NFE} & \multicolumn{2}{c}{PSNR} \\
+\cline{2-3}
+& Noisy & Denoised \\
+\midrule
+1 & 6.1077 & 22.2994 \\
+2 & 6.1077 & 23.5666 \\
+3 & 6.1077 & 23.5608 \\
+4 & 6.1077 & 23.5406 \\
+5 & 6.1077 & 23.5278 \\
+\bottomrule
+\end{tabular}
+
+\end{document}
